@@ -1,9 +1,11 @@
-require_relative("lib/spaceship.rb")
-require_relative("lib/car.rb")
-first_spaceship = Spaceship.new
-first_car = Car.new
+require_relative("lib/WordCount.rb")
+require_relative("lib/user.rb")
 
 
-first_spaceship.fly
-first_car.drive
+jon = User.new 
+
+jon.login
+
+
+
 

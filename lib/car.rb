@@ -1,19 +1,20 @@
 #lib/car.rb
 class Car 
-	attr_reader :type
-	def initialize 
+	
+	def initialize(type)
 		@type = type 
+		@cities= []
 
 	end
 
 	def drive
-		if type == "noisy_car"
+		if @type == "noisy_car"
 			puts "BROOOOM"
 		end
-		if type == "normal_car"
+		if @type == "normal_car"
 			puts "broom"
 		end
-	end
+	endfp
 
 	def speed_control 
 		puts "how fast are you going?"
@@ -23,4 +24,18 @@ class Car
 		end
 	end
 
+	def travel(city_name)
+		@cities.push(city_name)
+	end
+	def traveled
+		puts @cities
+	end
+
+end
+
+class Racing_Car < Car
+
+	def drive 
+	puts "VROOOOOOMMMMMMMMMMMMMMM"t
+	end
 end
