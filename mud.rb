@@ -4,7 +4,7 @@ room5 = Room.new("room5", nil, nil, "YEET You made it to the roof the choopa is 
 room4 = Room.new("room4", "N", room5, "Room4 is an elevator, you can only go N or S. \nThe bottom floor says na they top floor says yeet.\n What should you do?")
 room3 = Room.new("room3", "W", room4, "In this room you can clearly see now and you also here noises! \nFrom the S you here heavy metal music, and from the W you hear elevator music. \nWhat should you do?" )
 room2 = Room.new("room2", "S", room3, "This room is a little lighter, now you see green lights coming from S and red light from the N. \nWhat should you do?")
-room1 = Room.new("room1", "E", room2, "This is the first room, Its dark and scary. There could be anything outthere. \nYou only see light coming from E what should you do?")
+room1 = Room.new("room1", "E", room2, "This is the first room, Its dark and scary. There could be anything outthere but all you see are some colored glasses. \nYou only some light coming from E what should you do?")
 
 
 
