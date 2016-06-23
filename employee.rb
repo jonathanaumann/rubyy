@@ -1,12 +1,6 @@
-class Employee
-	attr_accessor :name, :email
-	def initialize(name, email)
-		@name =name 
-		@email= email
-	end
-end
 
-class HourlyEmployee < Employee
+
+module HourlyEmployee 
     def initialize(name, email, hourly_rate, hours_worked)
         @name = name
         @email = email
@@ -19,7 +13,7 @@ class HourlyEmployee < Employee
     end
 end
 
-class SalariedEmployee < Employee
+module SalariedEmployee 
     def initialize(name, email, annual_pay)
         @name = name
         @email = email
@@ -28,6 +22,16 @@ class SalariedEmployee < Employee
 
     def calculate_salary
       @annual_pay / 52
+    end
+end
+
+class Employee
+    include SalariedEmployee
+    include HourlyEmplyee
+    attr_accessor :name, :email
+    def initialize(name, email)
+        @name =name 
+        @email= email
     end
 end
 

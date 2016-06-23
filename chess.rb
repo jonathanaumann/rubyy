@@ -70,3 +70,23 @@ p white_knight_right.can_move?(5, 2) == true
 p white_knight_right.can_move?(7, 4) == false
 p white_knight_right.can_move?(3, 5) == false
 p white_knight_right.can_move?(8, 4) == false
+
+
+#BORED
+
+
+peices= [nil, [ ], [ ], [ ], [ ], [ ], [ ], [ ], [ ] ]
+
+peices[7][1]
+
+my_board = Board.new
+
+
+
+
+
+
+
+
+
+
