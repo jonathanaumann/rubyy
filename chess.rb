@@ -1,15 +1,47 @@
 # app.rb
 
-require_relative("peice.rb")
-
-require_relative("Classrook.rb")
-require_relative("ClassKing.rb")
-require_relative("ClassKnight.rb")
 
 
-# --------------------------
-# --------- Rook -----------
-# --------------------------
+
+require_relative("lib/piece.rb")
+
+
+require_relative("lib/classRook.rb")
+require_relative("lib/classKing.rb")
+require_relative("lib/classKnight.rb")
+require_relative("lib/classBoard.rb")
+
+
+
+
+
+
+
+
+
+
+my_board = Board.new
+
+my_board.add_piece(white_king)
+my_board.add_piece(white_rook_right)
+my_board.add_piece(white_knight_right)
+
+my_board.add_piece(black_king)
+my_board.add_piece(black_rook_right)
+
+puts "Board tests"
+x  y  final_x
+
+p my_board.board_can_move?(7, 1,  6, 3) == true
+
+
+p my_board.board_can_move?(5, 8,  5, 7) == true
+p my_board.board_can_move?(8, 8,  4, 8) == true
+
+p my_board.board_can_move?(57, 57,  7, 8) == false
+p my_board.board_can_move?(5, 8,  5, 8) == false
+
+
 
 black_rook_right = Rook.new(8, 8, "black")
 white_rook_right = Rook.new(8, 1, "white")
@@ -31,9 +63,7 @@ p white_rook_right.can_move?(2, 3) == false
 puts ""
 
 
-# --------------------------
-# --------- King -----------
-# --------------------------
+
 
 black_king = King.new(5, 8, "black")
 white_king = King.new(5, 1, "white")
@@ -57,9 +87,7 @@ p white_king.can_move?(1, 1) == false
 puts ""
 
 
-# --------------------------
-# -------- Knight ----------
-# --------------------------
+
 
 white_knight_right = Knight.new(7, 1, "white")
 
@@ -72,14 +100,14 @@ p white_knight_right.can_move?(3, 5) == false
 p white_knight_right.can_move?(8, 4) == false
 
 
-#BORED
 
 
-peices= [nil, [ ], [ ], [ ], [ ], [ ], [ ], [ ], [ ] ]
 
-peices[7][1]
+# peices= [nil, [ ], [ ], [ ], [ ], [ ], [ ], [ ], [ ] ]
 
-my_board = Board.new
+# peices[7][1]
+
+# my_board = Board.new
 
 
 

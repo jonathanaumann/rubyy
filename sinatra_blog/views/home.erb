@@ -7,15 +7,20 @@
  <% @posts.each_with_index do |post, index| %>
   <li>
   <a href="/post_details/<%= index %>"><%= post.title %>   
-  <%= post %> </a>
+  </a>
     </li>
 <% end %>
       
   
 </ul>
+<style>
+img {
+    float: right;
+}
+</style>
+<img src="/blog.gif">
 
-
-<a href="/new_post">
+<a href="/new_post"  width="1920" height="1400"/>
   Add a new post
 </a>
 

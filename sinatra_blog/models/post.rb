@@ -1,10 +1,12 @@
 require_relative("blog.rb")
 
 class Post
-	attr_accessor :title, :date, :text 
-	def initialize(title, date, text)
+	attr_accessor :title, :date, :catagory, :author, :text 
+	def initialize(title, date, catagory, author, text)
 		@title = title
-		@date =date
+		@date = date
+		@catagory = catagory
+		@author = author
 		@text = text 
 	end
 
@@ -19,6 +21,12 @@ class Post
 	def text
 		return @text
 	end 
+	def author
+		return @author
+	end
+	def catagory
+		return @catagory
+	end
 	# def print
 	# 		puts @title
 	# 		puts "*******************"
@@ -27,14 +35,4 @@ class Post
 		
 	# end
 
-end
-
-class SponsoredPosts < Post
-	# def print
-	# 		puts "**********Post @title **********"
-	# 		puts "*******************"
-	# 		puts @text
-	# 		puts "-------------------"
-		 
-	# end
 end

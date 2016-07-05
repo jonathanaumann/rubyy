@@ -14,4 +14,3 @@ pass = PasswordChecker.new.check_password("j@hot.com", "Lmao$0000")
 Get "/" do  
 	erb(:home)
 end 
-

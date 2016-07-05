@@ -8,9 +8,9 @@ require "rack/test"
 RSpec.describe Blog do
 	before(:each)do 
 		@blog = Blog.new
-		@post2= Post.new("third", Time.new(2016, 3, 15), "This is my third and last post counted")
-		@post1= Post.new("First Post", Time.new(2016,1 ,1), "this is my first post im pretty confident it will post")
-		@post3= Post.new("wassup", Time.new(2016, 3, 16), "This is 5th and last post for awhile")
+		@post2= Post.new("third", Time.new(2016, 3, 15), "about me", "jonathan Aumann", "This is my third and last post counted")
+		@post1= Post.new("First Post", Time.new(2016,1 ,1), "about me", "jonathan Aumann", "this is my first post im pretty confident it will post")
+		@post3= Post.new("wassup", Time.new(2016, 3, 16), "about me", "jonathan Aumann", "This is 5th and last post for awhile")
 		@blog.add_post @post2
 		@blog.add_post @post1
 		@blog.add_post @post3

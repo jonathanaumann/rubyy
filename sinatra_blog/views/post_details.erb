@@ -1,13 +1,18 @@
 
 <h1> Post Details </h1>
 
-
+<h2> <strong> <%= @posts[@index].catagory %> </strong></h2>
 
 <ul> 
     <li>
    
       <%= @posts[@index].title %>
- 
+      <br>
+    By,
+      <%= @posts[@index].author %>
+      </li>
+      <li>
+ On, 
       <%= @posts[@index].date %> 
           </li>
       <li>
