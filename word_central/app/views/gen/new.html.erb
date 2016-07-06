@@ -1,0 +1,16 @@
+<form action="/gen" method="post">
+  <div>
+    <label for="text_inspection_user_num">Number:</label>
+     <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+  <input type="text" name="text_inspection[user_num]"
+      placeholder="Number of ..." action="/post" method="post" id="text_inspection_user_text">
+  </div>
+  <form action="/gen">
+  <select name="type">
+    <option value="paragraphs">Paragraphs</option>
+    <option value="words">Words</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>

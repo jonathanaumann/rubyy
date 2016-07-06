@@ -1,0 +1,12 @@
+
+<%= @text %><h1> has <%=@word_count%> words.</h1> 
+
+
+<h2>It will take you <%=@timeinsec%> seconds to read this.</h2>
+
+<%= link_to "home", "/" %>
+
+<br>
+
+
+<%=  @h.each {|word, h| puts word+' '+h.to_s} %>
