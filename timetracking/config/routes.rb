@@ -3,7 +3,12 @@ Rails.application.routes.draw do
 
 get '/', to: 'site#home'
 
-get "/project", to: "projects#index" 
+get "/projects", to: "projects#index" 
 
+
+get "/project/new", to: "projects#new"
 get "/project/:id", to: "projects#show"
+
+
+post "/projects" => "projects#create"
 end

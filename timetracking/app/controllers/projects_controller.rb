@@ -8,9 +8,21 @@ class ProjectsController < ApplicationController
 
 	def show
 		@theproject = Project.find(params[:id])
-		unless @theproject
-			render "not_founf"
-		end	
-			render "show"
+		render "show"
+	end
+
+	def new
+
+	 @theproject = Project.new
+	 render "new"
+	end
+
+	def create 
+		@theproject = Project.new(
+			:name => params[:project][:name],
+			:description => params[:project][:description])
+		@theproject.save
+
+	redirect_to "/projects"
 	end
 end
