@@ -24,7 +24,7 @@ class TextInspectionsController < ApplicationController
 
 
 
-
+ce
 
      # 	if h.has_key?(w)
      #  	h[w] = h[w] + 1
