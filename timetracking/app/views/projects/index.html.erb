@@ -3,7 +3,7 @@
 	<% @projects.each do |pjct| %>
 	<li>
 	
-	<%= link_to pjct.name, "project/#{pjct.id}" %> - 
+	<%= link_to pjct.name, "projects/#{pjct.id}" %> - 
 	<%= link_to "Time entries", "projects/#{pjct.id}/time_entries" %>
 	</li>
 	<% end %>
